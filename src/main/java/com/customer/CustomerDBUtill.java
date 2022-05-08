@@ -13,7 +13,7 @@ public class CustomerDBUtill {
 	private static Connection con = null;
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
-
+//validate
 	public static boolean validate(String userName, String password) {
 
 		try {
