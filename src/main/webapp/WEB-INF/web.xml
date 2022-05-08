@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	
+<!--//////////////////// Customer ////////////////-->
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.customer.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Log</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CustomerInsert</servlet-name>
+		<servlet-class>com.customer.CustomerInsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerInsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Updatecus</servlet-name>
+		<servlet-class>com.customer.UpdateCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Updatecus</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Deletecus</servlet-name>
+		<servlet-class>com.customer.DeleteCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deletecus</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+<!--////////////////// Payment ////////////////////-->
+
+<servlet>
+		<servlet-name>PaymentInsert</servlet-name>
+		<servlet-class>com.customer.PaymentInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PaymentInsert</servlet-name>
+		<url-pattern>/pminsert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Updatepm</servlet-name>
+		<servlet-class>com.customer.PaymentUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Updatepm</servlet-name>
+		<url-pattern>/pmUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Deletepm</servlet-name>
+		<servlet-class>com.customer.PaymentDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deletepm</servlet-name>
+		<url-pattern>/pmdelete</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>Paymentsl</servlet-name>
+		<servlet-class>com.customer.PaymentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Paymentsl</servlet-name>
+		<url-pattern>/pay</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
