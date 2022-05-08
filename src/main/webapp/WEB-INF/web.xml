@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<welcome-file-list>
+		<welcome-file> Homepage.html </welcome-file>
+		<welcome-file>Homepage.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!--//////////////////// Customer //////////////// -->
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.customer.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Log</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CustomerInsert</servlet-name>
+		<servlet-class>com.customer.CustomerInsert</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CustomerInsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Updatecus</servlet-name>
+		<servlet-class>com.customer.UpdateCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Updatecus</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Deletecus</servlet-name>
+		<servlet-class>com.customer.DeleteCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deletecus</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<!--////////////////// Payment //////////////////// -->
+
+	<servlet>
+		<servlet-name>PaymentInsert</servlet-name>
+		<servlet-class>com.customer.PaymentInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PaymentInsert</servlet-name>
+		<url-pattern>/pminsert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Updatepm</servlet-name>
+		<servlet-class>com.customer.PaymentUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Updatepm</servlet-name>
+		<url-pattern>/pmUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Deletepm</servlet-name>
+		<servlet-class>com.customer.PaymentDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deletepm</servlet-name>
+		<url-pattern>/pmdelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Paymentsl</servlet-name>
+		<servlet-class>com.customer.PaymentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Paymentsl</servlet-name>
+		<url-pattern>/pay</url-pattern>
+	</servlet-mapping>
+
+	<!-- \\\\\\\\\\\\\\\\\ Room\\\\\\\\\\\\\ -->
+	<servlet>
+		<servlet-name>roomlogin</servlet-name>
+		<servlet-class>com.room.RoomLoginServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>roomlogin</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>roominsert</servlet-name>
+		<servlet-class>com.room.RoomInsertServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>roominsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updateroom</servlet-name>
+		<servlet-class>com.room.UpdateRoomServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>updateroom</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deleteroom</servlet-name>
+		<servlet-class>com.room.DeleteRoomServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deleteroom</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<!--////////////////// food//////////// -->
+	<servlet>
+		<servlet-name>foodlogin</servlet-name>
+		<servlet-class>com.food.FoodLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>foodlogin</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>foodinsert</servlet-name>
+		<servlet-class>com.food.FoodInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>foodinsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>updatefood</servlet-name>
+		<servlet-class>com.food.UpdateFoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatefood</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deletefood</servlet-name>
+		<servlet-class>com.food.DeleteFoodServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deletefood</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<!-- ////////////////////////////event //////////////////////// -->
+	<servlet>
+		<servlet-name>eventlogin</servlet-name>
+		<servlet-class>com.event.EventLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eventlogin</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>eventinsert</servlet-name>
+		<servlet-class>com.event.eventInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eventinsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>updateevent</servlet-name>
+		<servlet-class>com.event.UpdateEventServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateevent</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>deleteevent</servlet-name>
+		<servlet-class>com.room.DeleteEventServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteevent</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+</web-app>
