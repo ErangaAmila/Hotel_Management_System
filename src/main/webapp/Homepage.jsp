@@ -10,7 +10,8 @@
 <script src="js/bootstrap.js"></script>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+<script type="text/javascript" src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+<script type="text/javascript" src="js.js"></script>
 
 <div class="hero-image">
 	<div class="hero-text">
@@ -21,7 +22,7 @@
 <!-- Navigation bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#">Home</a>
+		<a class="navbar-brand" href="Homepage.jsp">Home</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,33 +31,12 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Rooms & Offers </a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">Rooms</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Rooms Offer</a></li>
-					</ul></li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Foods </a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">Online Order</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Reservation</a></li>
-					</ul></li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Event </a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">Weddings</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Meetings</a></li>
-					</ul></li>
+				<li class="nav-item"><a class="nav-link" href="roomLogin.jsp"
+					tabindex="-1" aria-disabled="true">Rooms</a></li>
+				<li class="nav-item"><a class="nav-link" href="foodLogin.jsp"
+					tabindex="-1" aria-disabled="true">Foods</a></li>
+				<li class="nav-item"><a class="nav-link" href="eventLogin.jsp"
+					tabindex="-1" aria-disabled="true">Event</a></li>
 				<li class="nav-item"><a class="nav-link" href="CustomerReg.jsp"
 					tabindex="-1" aria-disabled="true">Register</a></li>
 				<li class="nav-item"><a class="nav-link" href="login.jsp"
@@ -76,17 +56,124 @@
 
 </head>
 <body>
-	<h2 class="sppb-addon-title">Our Luxury Rooms</h2>
-	<h3 class="sppb-addon-title">Single Room</h3>
-	<h3 class="sppb-addon-title">Double Room</h3>
-	<h3 class="sppb-addon-title">Triple Room</h3>
+	<br>
+	
+	<h2 class="sppb-addon-title" style= "text-align:center"><b>LUXURY ROOMS</b></h2>
+	<br>
+	<br>
+	<!-- body box -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<div class="card" style="width: 18rem;">
+					<img src="images/signature.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">SUPERIOR KING ROOM</h5>
+						<p class="card-text">
+						<p>This King room has a spacious bathroom with glass enclosed,
+							privileged access to the iconic infinity pool & rooftop garden.</p>
 
-	<h2 class="sppb-addon-title">TESTIMONIAL</h2>
+						</p>
+						<a href="#" class="btn btn-primary">BOOK NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card" style="width: 18rem;">
+					<img src="images/Dulex_Twin_Room.jpg" class="card-img-top"
+						alt="...">
+					<div class="card-body">
+						<h5 class="card-title">SUPERIOR TWIN ROOM</h5>
+						<p class="card-text">
+						<p>This Twin room has spacious bathroom with glass enclosed,
+							privileged access to the iconic infinity pool & rooftop garden.</p>
+						</p>
+
+						<a href="#" class="btn btn-primary">BOOK NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card" style="width: 18rem;">
+					<img src="images/Premier_King_Room.jpg" class="card-img-top"
+						alt="...">
+					<div class="card-body">
+						<h5 class="card-title">DELUXE TWIN ROOM</h5>
+						<p class="card-text">
+						<p>This twin room has a balcony, attached bathroom. Guests
+							have privileged access to the infinity pool & rooftop garden.</p>
+
+						</p>
+
+						<a href="#" class="btn btn-primary">BOOK NOW</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- body box end -->
+	<br>
+	<h2 class="sppb-addon-title" style= "text-align:center"><b>SEMI LUXURY ROOMS</b></h2>
+	<br>
+	<!-- body box -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<div class="card" style="width: 18rem;">
+					<img src="images/signature.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Single Room</h5>
+						<p class="card-text">
+						<p>This King room has a spacious bathroom with glass enclosed,
+							privileged access to the iconic infinity pool & rooftop garden.</p>
+
+						</p>
+						<a href="#" class="btn btn-primary">BOOK NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card" style="width: 18rem;">
+					<img src="images/Dulex_Twin_Room.jpg" class="card-img-top"
+						alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Double Room</h5>
+						<p class="card-text">
+						<p>This Twin room has spacious bathroom with glass enclosed,
+							privileged access to the iconic infinity pool & rooftop garden.</p>
+						</p>
+
+						<a href="#" class="btn btn-primary">BOOK NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card" style="width: 18rem;">
+					<img src="images/Premier_King_Room.jpg" class="card-img-top"
+						alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Triple Room</h5>
+						<p class="card-text">
+						<p>This twin room has a balcony, attached bathroom. Guests
+							have privileged access to the infinity pool & rooftop garden.</p>
+
+						</p>
+
+						<a href="#" class="btn btn-primary">BOOK NOW</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- body box end -->
 
 
 </body>
 
-<!-- Footer -->
+
+
+
+<!--////////////// Footer //////////////////////////-->
 <footer class="text-center text-lg-start bg-light text-muted">
 	<!-- Section: Social media -->
 	<section
