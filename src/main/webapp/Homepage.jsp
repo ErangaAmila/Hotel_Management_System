@@ -83,8 +83,7 @@
 
 	<h2 class="sppb-addon-title">TESTIMONIAL</h2>
 
-	<h3>/////////////////////////////Body is Under
-		construction////////////////////////</h3>
+
 </body>
 
 <!-- Footer -->
